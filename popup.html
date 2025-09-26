@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documentation Writer Extension</title>
+    <style>
+      body{font-family: Arial, sans-serif;min-width:320px;padding:12px}
+      button{margin:6px 0;padding:8px 12px}
+      .status{margin-top:8px;font-size:13px}
+      ul{padding-left:18px}
+      .shot{font-size:13px}
+    </style>
+  </head>
+  <body>
+    <h3>Documentation Writer Extension</h3>
+    <h4>Nicholas Pease & Raist Cotroneo</h4>
+    <div>
+      <button id="toggle">Activate</button>
+      <button id="clear">Clear Shots</button>
+    </div>
+    <div style="margin-top:8px">
+      <button id="downloadAll">Download ZIP + PDFs</button>
+    </div>
+    <div class="status" id="status">Steps: 0</div>
+    <div style="margin-top:8px">
+      <ul id="shotList"></ul>
+    </div>
+
+    <!-- Libraries from CDN (these must be available when extension runs). If you prefer, bundle them locally into the extension instead of CDN. -->
+    <script src="jszip.min.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <script src="jspdf.umd.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
